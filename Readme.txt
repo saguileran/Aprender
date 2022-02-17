@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: Day
-Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+Template Name: Presento
+Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/

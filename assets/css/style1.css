@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #e76668;
+  color: #114623;
   text-decoration: none;
 }
 
@@ -469,6 +469,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-10px);
   }
 }
+
+/*--------------------------------------------------------------
+# Sldide
+--------------------------------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1226,60 +1232,89 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
-  background: #fff;
+  position: relative;
+  width: 620px;
+  height: 230px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #2b2b2b;
+  transition: 0.5s;
 }
-.team .member img {
-  max-width: 60%;
-  width:280px;
-  height:220px;
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
   border-radius: 50%;
-  margin: 0 0 30px 0;
+}
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+  width: 180px;
+  height: 180px;
+}
+.team .member:hover {
+  transform: translateY(-10px);
+}
+.team .member .member-info {
+  padding-left: 30px;
 }
 .team .member h4 {
   font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #1e6621;
 }
 .team .member span {
-  font-style: italic;
   display: block;
-  font-size: 13px;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
 }
-.team .member span1 {
+.team .member span::after {
+  content: "";
+  position: absolute;
   display: block;
-  color:#919191;
-  font-size: 12px;
+  width: 50px;
+  height: 1px;
+  background: #cbe9d0;
+  bottom: 0;
+  left: 0;
 }
 .team .member p {
-  padding-top: 10px;
+  margin: 10px 0 0 0;
   font-size: 14px;
-  font-style: italic;
-  color: #aaaaaa;
-  text-align: center;
 }
 .team .member .social {
-  margin-top: 15px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .team .member .social a {
-  color: #919191;
-  transition: 0.3s;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #1b1b1b;
 }
-.team .member .social a:hover {
-  color: #148a28;
-}
-.team .member .social i {
-  font-size: 18px;
+.team .member .social a i {
+  color: #31ad2d;
+  font-size: 16px;
   margin: 0 2px;
 }
-
-#team .member:hover {
-  transform: scale(1.1);
+.team .member .social a:hover {
+  background: #1b5e21;
 }
+.team .member .social a:hover i {
+  color: #fff;
+}
+.team .member .social a + a {
+  margin-left: 8px;
+  }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1289,8 +1324,10 @@ section {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 35px 0 32px 0;
   border-radius: 4px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
+
+
 
 #contact .info-box:hover {
   transform: scale(1.1);
@@ -1963,61 +2000,3 @@ section {
 }
 
 
-
-/* ----------- Whatsapp ---------- */
-.float-button {
-  text-decoration: none;
-  position: fixed;
-  padding: 0px;
-  padding-right: 15px;
-  bottom: 0px;
-  left: 30px;
-  color: rgb(161, 83, 83);
-  background-color:#307765;
-  border-radius: 25px 30px 5px 25px;
-  z-index: 100;
-  font-family: Arial;
-  font-size: 10px;
-  animation: whatsapp-animation 0.5s ease-in-out;
-  box-shadow: 1px 2px 5px 2px rgba(30,30,30,0.3);
-  transition:all 0.3s ease-out;
-}
-
-.float-button:hover {
-   background-color: #d3ffd8;
-    color: #00e676;
-}
-
-.fa-whatsapp {
-  font-size: 10px !important;
-  padding-right: 1px;
-  padding-left: 1px;
-}
-
-@keyframes whatsapp-animation {
-  from {
-      opacity: 0%;
-  }
-
-  to {
-      opacity: 100%
-  }
-}
-
-@media screen and (max-width: 545px) {
-  span {
-      display: none;
-  }
-
-  .float-button {
-      bottom: 5px;
-      right: 10px;
-      width: 10px;
-      border-radius: 20px 20px 5px 20px;
-  }
-
-  .fa-whatsapp {
-      font-size: 22px !important;
-      padding: 4px;
-  }
-}
