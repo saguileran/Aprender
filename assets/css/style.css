@@ -825,7 +825,7 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0 0px 40px 10px;
   background: #302c2c;
   box-shadow: 0 10px 29px 0 rgba(26, 67, 180, 0.1);
   transition: all 0.3s ease-in-out;
@@ -840,11 +840,11 @@ section {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 #services .icon i {
-  font-size: 36px;
+  font-size: 42px;
   line-height: 0;
 }
 #services .title {
@@ -1225,60 +1225,127 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 20px;
+.team {
   background: #fff;
-}
-.team .member img {
-  max-width: 60%;
-  width:280px;
-  height:220px;
-  border-radius: 50%;
-  margin: 0 0 30px 0;
-}
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  text-align: center;
-}
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-.team .member span1 {
-  display: block;
-  color:#919191;
-  font-size: 12px;
-}
-.team .member p {
-  padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #aaaaaa;
-  text-align: center;
-}
-.team .member .social {
-  margin-top: 15px;
-}
-.team .member .social a {
-  color: #919191;
-  transition: 0.3s;
-}
-.team .member .social a:hover {
-  color: #148a28;
-}
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+  padding: 100px 0;
+  margin-right: auto;
+  
 }
 
-#team .member:hover {
-  transform: scale(1.1);
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 0px;
+  margin-left: 150px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/team-shape.svg) no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
+.team .member .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(127, 131, 126, 0.9);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member .social a:hover {
+  color: rgba(58, 59, 58, 0.9);
+}
+
+.team .member .social i {
+  font-size: 30px;
+}
+
+.team .member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgba(26, 54, 23, 0.842);
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
+}
+
+.team .member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
+.team .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.team .box h4 {
+  font-size: 42px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.team .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.team .box h4 span {
+  font-size: 16px;
+  font-weight: 300;
 }
 /*--------------------------------------------------------------
 # Contact
