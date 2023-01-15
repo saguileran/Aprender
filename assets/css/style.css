@@ -630,6 +630,7 @@ section {
 .about .container {
   position: relative;
   z-index: 10;
+  margin-top: 0;
   
 }
 .about .content {
@@ -1036,10 +1037,10 @@ section {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
-  margin: 30px 15px;
+  margin: 5px 15px 15px 15px;
   min-height: 200px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-  position: relative;
+  position: relaative;
   background: #fff;
   border-radius: 15px;
 }
@@ -1053,13 +1054,15 @@ section {
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 0px 0 5px 0;
   color: #111;
+  text-align: center;
 }
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
   margin: 0;
+  text-align: center;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: #fceaea;
@@ -1078,11 +1081,13 @@ section {
 }
 .testimonials .testimonial-item p {
   font-style: italic;
-  text-align: justify;
+  text-align: center;
+
   margin: 20px auto 20px auto;
+  color:#000000;
 }
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -1090,7 +1095,7 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #2b9141;
+  border: 1px solid #000000;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #2b9141;
@@ -1308,7 +1313,7 @@ section {
 }
 
 .team .member .social {
-  margin-left: 50px;
+  margin-left: 60px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -1333,7 +1338,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #4ce447;
+  background: #749173;
 }
 
 .team .member .social a:hover i {
