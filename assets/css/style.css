@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #e76668;
+  color: #133818;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 10px;
     bottom: 10px;
     border-radius: 8px;
-    background: #fff no-repeat;
+    background: rgb(185, 137, 137) no-repeat;
     background-size: 60px 10px;
     background-image: linear-gradient(#ddd 100px, transparent 0), 
             linear-gradient(#ddd 100px, transparent 0), 
@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
   position: relative;
 }
@@ -519,7 +519,7 @@ section {
 
 .section-bg {
   padding: 120px 0;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .section-bg:before {
   content: "";
@@ -836,7 +836,8 @@ section {
 }
 #services .icon {
   margin: 0 auto 15px auto;
-  padding-top: 12px;
+  padding-top: 19px;
+  padding-left: 3px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -1100,22 +1101,26 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
+  margin: auto -50px auto 150px;;
   background: #2b2b2b;
   text-align: center;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
 }
+.pricing p {
+  font-weight:50;
+}
 
 .pricing .box h3 {
-  font-weight: 400;
+  font-weight: 1500;
   padding: 15px;
-  font-size: 18px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
 }
 .pricing .box h4 {
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1133,8 +1138,9 @@ section {
   padding: 0;
   list-style: none;
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
   font-size: 14px;
+  font-weight: 50;
 }
 .pricing .box ul li {
   padding-bottom: 16px;
@@ -1205,6 +1211,8 @@ section {
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  color: #000000;
+  font-weight: 50;
 }
 .faq .faq-list .icon-show {
   display: none;
@@ -1213,7 +1221,7 @@ section {
   color: #343a40;
 }
 .faq .faq-list a.collapsed:hover {
-  color: #84b991;
+  color: #9abea3;
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
@@ -1225,127 +1233,115 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 100px 0;
-  margin-right: auto;
-  
-}
-
 .team .member {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  margin-right: 0px;
-  margin-left: 150px;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  transition: 0.3s;
-}
-
-.team .member .member-img {
   position: relative;
-  overflow: hidden;
-}
-
-.team .member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
-  z-index: 1;
-}
-
-.team .member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
   transition: 0.5s;
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  z-index: 2;
+  margin: 0 -150px 0 200px;
 }
 
-.team .member .social a {
-  transition: color 0.3s;
-  color: rgba(127, 131, 126, 0.9);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
+.team .member .pic {
+  overflow: hidden;
+  width: 300px;
+  border-radius: 50%;
 }
 
-.team .member .social a:hover {
-  color: rgba(58, 59, 58, 0.9);
-}
-
-.team .member .social i {
-  font-size: 30px;
-}
-
-.team .member .member-info {
-  padding: 10px 15px 20px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: rgba(26, 54, 23, 0.842);
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: #5e5e5e;
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
 }
 
 .team .member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  transform: translateY(-10px);
 }
 
-.team .member:hover .social {
-  right: 8px;
-  opacity: 1;
+.team .member .member-info {
+  padding-left: 30px;
 }
-.team .box h3 {
-  font-weight: 400;
-  padding: 15px;
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 25px;
+  text-align:center;
+  color: #1d4323;
+}
+
+.team .member span {
+  display: block;
+  text-align:center;
+  font-size: 15;
+  padding-bottom: 0px;
+  position: relative;
+  color:rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+}
+
+.team .member span1 {
+  display: block;
+  text-align:center;
+  font-size: 15;
+  padding-bottom: 10px;
+  position: relative;
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+.team .member span1::after {
+  content: "";
+  margin-left: 80px;
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 1px;
+  background: #cde9cb;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
   font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
+  color:rgba(0, 0, 0, 0.9);
 }
-.team .box h4 {
-  font-size: 42px;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
+
+.team .member .social {
+  margin-left: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.team .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
+
+.team .member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  background: #eff2f8;
 }
-.team .box h4 span {
-  font-size: 16px;
-  font-weight: 300;
+
+.team .member .social a i {
+  color: #235036;
+  font-size: 30px;
+  margin: 0 2px;
+}
+
+.team .member .social a:hover {
+  background: #4ce447;
+}
+
+.team .member .social a:hover i {
+  color: #fff;
+}
+
+.team .member .social a+a {
+  margin-left: 8px;
 }
 /*--------------------------------------------------------------
 # Contact
@@ -1895,9 +1891,11 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  font-weight: 1px;
 }
+
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 #footer .footer-top .footer-info {
   margin-bottom: 10px;
@@ -1912,16 +1910,17 @@ section {
   margin: 0 0 0px 0;
   padding: 0px 0 0px 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
 }
 #footer .footer-top .footer-info p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  font-weight: 0px;
 }
 #footer .footer-top .social-links a {
-  font-size: 18px;
+  font-size: 30px;
   display: inline-block;
   background: #262626;
   color: #fff;
@@ -1930,8 +1929,8 @@ section {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
@@ -1940,15 +1939,28 @@ section {
   text-decoration: none;
 }
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   position: relative;
   padding-bottom: 12px;
-
+  padding-top: 20px;
 }
+
+#footer .footer-top p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 10;
+}
+
+#footer .footer-top p1 {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 10;
+}
+
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
 }
@@ -1978,7 +1990,7 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  color: #eb4444;
+  color: #44eb4c;
 }
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
@@ -2012,16 +2024,18 @@ section {
 #footer .copyright {
   border-top: 1px solid #262626;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
+  font-weight: 1px;
 }
 #footer .credits {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
   color: #fff;
+  font-weight: 1px;
 }
 #footer .credits a {
-  color: #083a11;
+  color: #4eb960;
 }
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
