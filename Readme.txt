@@ -1,4 +1,6 @@
-Thanks for downloading this template!
+# Aprender Homepage
+
+Website of the Aprender preparatory school. The objective of this preparatory is to encourage and teach young people to study at the university.
 
 Template Name: Presento
 Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
